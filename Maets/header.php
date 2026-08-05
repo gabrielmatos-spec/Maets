@@ -1,19 +1,19 @@
 <?php
-error_reporting(0);
-session_start();
+    error_reporting(0);
+    session_start();
 
-date_default_timezone_set('America/Sao_Paulo');
+    date_default_timezone_set('America/Sao_Paulo');
 
-if(isset($_SESSION['logado']) && $_SESSION['logado'] === true){
+    if(isset($_SESSION['logado']) && $_SESSION['logado'] === true){
 
-    $idUsuario    = $_SESSION['idUsuario'];
-    $nomeUsuario  = $_SESSION['nomeUsuario'];
-    $emailUsuario = $_SESSION['emailUsuario'];
-    $nivelUsuario = $_SESSION['nivelUsuario'];
+        $idUsuario = $_SESSION['idUsuario'];
+        $nomeUsuario = $_SESSION['nomeUsuario'];
+        $emailUsuario = $_SESSION['emailUsuario'];
+        $nivelUsuario = $_SESSION['nivelUsuario'];
 
-    $nomeCompleto = explode(" ", $nomeUsuario);
-    $primeiroNome = $nomeCompleto[0];
-}
+        $nomeCompleto = explode(' ', $nomeUsuario);
+        $primeiroNome = $nomeCompleto[0];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -21,617 +21,206 @@ if(isset($_SESSION['logado']) && $_SESSION['logado'] === true){
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>MAETS: Plataforma Digital de Distribuição de Jogos Digitais</title>
-<link href="css/styles.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <title>MAETS - Plataforma Digital de Distribuição de Jogos</title>
 
-<style>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
-body{
-    background:#1b2838;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <link href="css/styles.css" rel="stylesheet">
 
-.navbar{
-    background:#171a21;
-}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-.navbar-brand{
-    color:#66c0f4!important;
-    font-weight:bold;
-    font-size:28px;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-.nav-link{
-    color:white!important;
-}
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.nav-link:hover{
-    color:#66c0f4!important;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
-.banner{
-    height:550px;
-    background-image:
-    linear-gradient(rgba(23,26,33,.80),rgba(23,26,33,.85)),
-    url("assets/img/banner.jpg");
-    background-size:cover;
-    background-position:center;
+    <style>
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
+        body{
+            background:#f8f9fa;
+        }
 
-.banner h1{
-    font-size:60px;
-    font-weight:bold;
-}
+        .navbar{
+            background:#171a21;
+        }
 
-.banner p{
-    font-size:22px;
-}
+        .navbar-brand,
+        .nav-link{
+            color:white !important;
+        }
 
-.btn-steam{
+        .nav-link:hover{
+            color:#66c0f4 !important;
+        }
 
-    background:#66c0f4;
-    color:#fff;
-    border:none;
-    padding:15px 35px;
-    font-size:20px;
-    border-radius:8px;
-    transition:.3s;
+        .banner{
+            background:#1b2838;
+            color:white;
+            padding:60px 0;
+        }
 
-}
+        .audiowide{
+            font-family:"Audiowide", sans-serif;
+        }
 
-.btn-steam:hover{
-
-    background:#1999ff;
-
-}
-
-.titulo{
-
-    font-size:38px;
-    margin-bottom:40px;
-    font-weight:bold;
-
-}
-
-.card{
-
-    background:#2a475e;
-    border:none;
-    transition:.3s;
-    overflow:hidden;
-
-}
-
-.card:hover{
-
-    transform:scale(1.04);
-    box-shadow:0px 0px 20px rgba(102,192,244,.4);
-
-}
-
-.card img{
-
-    height:260px;
-    object-fit:cover;
-
-}
-
-.card-title{
-
-    color:white;
-
-}
-
-.preco{
-
-    color:#66c0f4;
-    font-size:22px;
-    font-weight:bold;
-
-}
-
-footer{
-
-    background:#171a21;
-    color:#9aa7b2;
-    padding:30px;
-
-}
-
-</style>
+    </style>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-dark">
 
-<div class="container">
+    <div class="container">
 
-<a class="navbar-brand" href="index.php">
+        <a class="navbar-brand audiowide" href="index.php">
+            MAETS
+        </a>
 
-MAETS
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
 
-</a>
+            <span class="navbar-toggler-icon"></span>
 
-<button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#menu">
+        </button>
 
-<span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-</button>
+            <ul class="navbar-nav me-auto">
 
-<div class="collapse navbar-collapse" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">Loja</a>
+                </li>
 
-<ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Categorias</a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Loja</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promoções</a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Categorias</a>
-</li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Lançamentos</a>
-</li>
+            </ul>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Promoções</a>
-</li>
+            <ul class="navbar-nav">
 
-<li class="nav-item">
-<a class="nav-link" href="#">Sobre</a>
-</li>
+                <?php
 
-</ul>
+                if(isset($_SESSION['logado']) && $_SESSION['logado'] === true){
 
-<ul class="navbar-nav">
+                ?>
 
-<?php
+                    <li class="nav-item dropdown">
 
-if(isset($_SESSION['logado']) && $_SESSION['logado']===true){
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           data-bs-toggle="dropdown">
 
-?>
+                            <i class="bi bi-person-circle"></i>
+                            <?php echo $primeiroNome; ?>
 
-<li class="nav-item dropdown">
+                        </a>
 
-<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <ul class="dropdown-menu dropdown-menu-end">
 
-<i class="bi bi-person-circle"></i>
+                            <li>
+                                <a class="dropdown-item" href="formAnuncio.php">
+                                    Criar Anúncio
+                                </a>
+                            </li>
 
-<?php echo $primeiroNome; ?>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Meus Jogos
+                                </a>
+                            </li>
 
-</a>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Minha Biblioteca
+                                </a>
+                            </li>
 
-<ul class="dropdown-menu dropdown-menu-end">
+                            <?php if($nivelUsuario=="administrador"){ ?>
 
-<li>
+                                <li><hr></li>
 
-<a class="dropdown-item" href="formAnuncio.php">
+                                <li>
+                                    <a class="dropdown-item" href="listarUsuarios.php">
+                                        Gerenciar Usuários
+                                    </a>
+                                </li>
 
-Criar anúncio
+                            <?php } ?>
 
-</a>
+                            <li><hr></li>
 
-</li>
+                            <li>
+                                <a class="dropdown-item" href="logout.php">
+                                    Sair
+                                </a>
+                            </li>
 
-<li>
+                        </ul>
 
-<a class="dropdown-item" href="#">
+                    </li>
 
-Meus anúncios
+                <?php
 
-</a>
+                }else{
 
-</li>
+                ?>
 
-<li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.php">
+                            Login
+                        </a>
+                    </li>
 
-<a class="dropdown-item" href="#">
+                <?php } ?>
 
-Minhas compras
+            </ul>
 
-</a>
+        </div>
 
-</li>
-
-<?php
-
-if($nivelUsuario=="administrador"){
-
-?>
-
-<li><hr></li>
-
-<li>
-
-<a class="dropdown-item" href="listarUsuarios.php">
-
-Gerenciar usuários
-
-</a>
-
-</li>
-
-<?php
-
-}
-
-?>
-
-<li><hr></li>
-
-<li>
-
-<a class="dropdown-item" href="logout.php">
-
-Sair
-
-</a>
-
-</li>
-
-</ul>
-
-</li>
-
-<?php
-
-}else{
-
-?>
-
-<li class="nav-item">
-
-<a class="nav-link" href="formLogin.php">
-
-Login
-
-</a>
-
-</li>
-
-<?php
-
-}
-
-?>
-
-</ul>
-
-</div>
-
-</div>
+    </div>
 
 </nav>
 
 <header class="banner">
 
-<div>
+    <div class="container text-center">
 
-<h1>Bem-vindo à MAETS</h1>
+        <img src="assets/img/logo_maets.png"
+             width="150"
+             class="mb-3">
 
-<p>
+        <h1 class="audiowide">
+            MAETS
+        </h1>
 
-A sua plataforma digital para comprar, vender e descobrir novos jogos.
+        <p class="lead">
+            Plataforma Digital de Distribuição de Jogos
+        </p>
 
-</p>
+        <a href="index.php" class="btn btn-primary">
+            Explorar Jogos
+        </a>
 
-<br>
-
-<a href="#jogos" class="btn btn-steam">
-
-Explorar Jogos
-
-</a>
-
-</div>
+    </div>
 
 </header>
 
-<section class="container py-5" id="jogos">
+<section class="py-5">
 
-<h2 class="titulo">
-
-Jogos em Destaque
-
-</h2>
-
-<div class="row">
-    <!-- Card 1 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/gta5.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                Grand Theft Auto V
-            </h5>
-
-            <p>
-                Explore Los Santos em um dos jogos mais vendidos da história.
-            </p>
-
-            <p class="preco">
-                R$ 79,90
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Card 2 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/minecraft.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                Minecraft
-            </h5>
-
-            <p>
-                Sobreviva, construa e explore mundos infinitos.
-            </p>
-
-            <p class="preco">
-                R$ 99,90
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Card 3 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/fifa.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                EA Sports FC 26
-            </h5>
-
-            <p>
-                O futebol mais realista da nova geração.
-            </p>
-
-            <p class="preco">
-                R$ 249,90
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Card 4 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/cyberpunk.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                Cyberpunk 2077
-            </h5>
-
-            <p>
-                Viva aventuras futuristas em Night City.
-            </p>
-
-            <p class="preco">
-                R$ 159,90
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Card 5 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/reddead2.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                Red Dead Redemption II
-            </h5>
-
-            <p>
-                Um enorme mundo aberto no velho oeste.
-            </p>
-
-            <p class="preco">
-                R$ 119,90
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Card 6 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/eldenring.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                Elden Ring
-            </h5>
-
-            <p>
-                Enfrente criaturas épicas em um RPG premiado.
-            </p>
-
-            <p class="preco">
-                R$ 199,90
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Card 7 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/forza.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                Forza Horizon 5
-            </h5>
-
-            <p>
-                Corra pelos cenários incríveis do México.
-            </p>
-
-            <p class="preco">
-                R$ 149,90
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Card 8 -->
-<div class="col-lg-3 col-md-6 mb-4">
-
-    <div class="card h-100">
-
-        <img src="assets/img/cs2.jpg" class="card-img-top">
-
-        <div class="card-body">
-
-            <h5 class="card-title">
-                Counter-Strike 2
-            </h5>
-
-            <p>
-                O FPS competitivo mais famoso do mundo.
-            </p>
-
-            <p class="preco">
-                Gratuito
-            </p>
-
-            <a href="#" class="btn btn-primary w-100">
-                Ver Jogo
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-<div class="container text-center">
-
-<h4 class="mb-3">
-
-MAETS
-
-</h4>
-
-<p>
-
-Plataforma Digital de Distribuição de Jogos.
-
-</p>
-
-<hr>
-
-<p>
-
-© 2026 MAETS - Todos os direitos reservados.
-
-</p>
-
-</div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+    <div class="container">

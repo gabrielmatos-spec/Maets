@@ -25,7 +25,6 @@
                     <th>FOTO</th>
                     <th>NOME</th>
                     <th>DATA DE NASCIMENTO</th>
-                    <th>CIDADE</th>
                     <th>EMAIL</th>
                     <th>NIVEL</th>
                     <th></th>
@@ -43,7 +42,6 @@
         $diaNascimentoUsuario  = substr($dataNascimentoUsuario, 8, 2);
         $mesNascimentoUsuario  = substr($dataNascimentoUsuario, 5, 2);
         $anoNascimentoUsuario  = substr($dataNascimentoUsuario, 0, 4);
-        $cidadeUsuario         = $usuario['cidadeUsuario'];
         $emailUsuario          = $usuario['emailUsuario'];
         $nivelUsuario          = $usuario['nivelUsuario'];
 
@@ -54,7 +52,6 @@
                 <td><img src='$fotoUsuario' style='width:50px;' class='rounded' title='Foto de $nomeUsuario'></td>
                 <td>$nomeUsuario</td>
                 <td>$diaNascimentoUsuario/$mesNascimentoUsuario/$anoNascimentoUsuario</td>
-                <td>$cidadeUsuario</td>
                 <td>$emailUsuario</td>
                 <td>$nivelUsuario</td>
                 <td><a href='#banirUsuario.php' title='Banir $nomeUsuario'><i class='bi bi-x-circle' style='color:red'></i></a></td>

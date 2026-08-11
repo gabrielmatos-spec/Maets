@@ -9,7 +9,7 @@
 
         <div class="card h-100">
 
-            <img src="assets/img/gta5.jpg" class="card-img-top" alt="GTA V">
+            <img src="img/gtaV.jpeg" class="card-img-top" alt="GTA V">
 
             <div class="card-body">
 
@@ -36,7 +36,7 @@
 
         <div class="card h-100">
 
-            <img src="assets/img/minecraft.jpg" class="card-img-top" alt="Minecraft">
+            <img src="img/mine.jpg.jpeg" class="card-img-top" alt="Minecraft">
 
             <div class="card-body">
 
@@ -63,7 +63,7 @@
 
         <div class="card h-100">
 
-            <img src="assets/img/fc26.jpg" class="card-img-top" alt="EA Sports FC">
+            <img src="img/fc26.jpeg" class="card-img-top" alt="EA Sports FC">
 
             <div class="card-body">
 
@@ -90,7 +90,7 @@
 
         <div class="card h-100">
 
-            <img src="assets/img/cyberpunk.jpg" class="card-img-top" alt="Cyberpunk">
+            <img src="img/ciberpunk.jpeg" class="card-img-top" alt="Cyberpunk">
 
             <div class="card-body">
 

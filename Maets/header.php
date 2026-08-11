@@ -58,7 +58,7 @@
         }
 
         .banner{
-            background:#1b2838;
+            background:#000;
             color:white;
             padding:60px 0;
         }
@@ -201,7 +201,7 @@
 
     <div class="container text-center">
 
-        <img src="assets/img/logo_maets.png"
+        <img src="img/logo.maets.jpeg"
              width="150"
              class="mb-3">
 

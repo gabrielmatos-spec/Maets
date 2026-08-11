@@ -4,7 +4,7 @@
         //Verifica se o método de envio das informações do form é "POST"
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             //Cria variáveis para armazenar as informações recebidas do array $_POST
-            $fotoUsuario = $nomeUsuario = $dataNascimentoUsuario = $cidadeUsuario = $emailUsuario = $senhaUsuario = $confirmarSenhaUsuario = "";
+            $fotoUsuario = $nomeUsuario = $dataNascimentoUsuario = $emailUsuario = $senhaUsuario = $confirmarSenhaUsuario = "";
 
             //Variável booleana para controle de erros de preenchimento
             $erroPreenchimento = false;
@@ -47,17 +47,6 @@
                     echo "<div class='alert alert-warning text-center'><strong>DATA</strong> inválida!</div>";
                     $erroPreenchimento = true;
                 }
-            }
-
-            //Validação do campo cidadeUsuario
-            //Utiliza a função empty() para verificar se o campo está vazio
-            if(empty($_POST["cidadeUsuario"])){
-                echo "<div class='alert alert-warning text-center'>O campo <strong>CIDADE</strong> é obrigatório!</div>";
-                $erroPreenchimento = true;
-            }
-            else{
-                //Se o $_POST["cidadeUsuario"] não estiver vazio, é filtrado e armazenado na variável PHP
-                $cidadeUsuario = filtrar_entrada($_POST["cidadeUsuario"]);
             }
 
             //Validação do campo emailUsuario
@@ -160,10 +149,6 @@
                                 <tr>
                                     <th>DATA DE NASCIMENTO</th>
                                     <td>$diaNascimentoUsuario/$mesNascimentoUsuario/$anoNascimentoUsuario</td>
-                                </tr>
-                                <tr>
-                                    <th>CIDADE</th>
-                                    <td>$cidadeUsuario</td>
                                 </tr>
                                 <tr>
                                     <th>EMAIL</th>

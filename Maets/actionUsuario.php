@@ -126,11 +126,12 @@
             if(!$erroPreenchimento && !$erroUpload){
 
                 //Cria uma variável para armazenar a QUERY que realiza a inserção de dados na tabela Usuarios
-                $inserirUsuario = "INSERT INTO Usuarios (fotoUsuario, nomeUsuario, dataNascimentoUsuario, cidadeUsuario, emailUsuario, senhaUsuario, nivelUsuario) VALUES ('$fotoUsuario', '$nomeUsuario', '$dataNascimentoUsuario', '$cidadeUsuario', '$emailUsuario', '$senhaUsuario', 'usuario')";
+                $inserirUsuario = "INSERT INTO Usuarios (fotoUsuario, nomeUsuario, dataNascimentoUsuario, emailUsuario, senhaUsuario, nivelUsuario) 
+                VALUES ('$fotoUsuario', '$nomeUsuario', '$dataNascimentoUsuario', '$emailUsuario', '$senhaUsuario', 'usuario')";
 
                 //Inclui o arquivo de conexão com o Banco de Dados
                 include "conexaoBD.php";
-
+ 
                 //Usa a função mysqli_query() para executar a QUERY no Banco de Dados
                 //Se conseguir, exibe alerta de sucesso e tabela com os dados informados
                 if(mysqli_query($conn, $inserirUsuario)){

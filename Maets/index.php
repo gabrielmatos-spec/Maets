@@ -122,25 +122,25 @@
 
     <div class="col-md-3 mb-3">
         <div class="card p-4">
-            <h4>🎮 Ação</h4>
+            <h4>Ação</h4>
         </div>
     </div>
 
     <div class="col-md-3 mb-3">
         <div class="card p-4">
-            <h4>⚽ Esportes</h4>
+            <h4>Esportes</h4>
         </div>
     </div>
 
     <div class="col-md-3 mb-3">
         <div class="card p-4">
-            <h4>🏎️ Corrida</h4>
+            <h4>Corrida</h4>
         </div>
     </div>
 
     <div class="col-md-3 mb-3">
         <div class="card p-4">
-            <h4>🧙 RPG</h4>
+            <h4>RPG</h4>
         </div>
     </div>
 

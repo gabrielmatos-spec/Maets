@@ -19,7 +19,7 @@
                     Explore Los Santos em um dos maiores sucessos da Rockstar.
                 </p>
 
-                <h5 class="text-success">R$ 79,90</h5>
+                <h5 class="text-success">R$ 82,42</h5>
 
                 <a href="#" class="btn btn-primary w-100">
                     Ver Jogo
@@ -73,7 +73,7 @@
                     O futebol mais realista da nova geração.
                 </p>
 
-                <h5 class="text-success">R$ 249,90</h5>
+                <h5 class="text-success">R$ 350,00</h5>
 
                 <a href="#" class="btn btn-primary w-100">
                     Ver Jogo
@@ -100,7 +100,7 @@
                     Viva aventuras futuristas em Night City.
                 </p>
 
-                <h5 class="text-success">R$ 159,90</h5>
+                <h5 class="text-success">R$ 199,90</h5>
 
                 <a href="#" class="btn btn-primary w-100">
                     Ver Jogo
@@ -116,38 +116,37 @@
 
 <hr class="my-5">
 
+<hr class="my-5">
+
 <h2 class="mb-4">Categorias</h2>
 
-<div class="row text-center">
+<div class="row">
 
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>Ação</h4>
-        </div>
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4">
+            Ação
+        </a>
     </div>
 
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>Esportes</h4>
-        </div>
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4">
+            Esportes
+        </a>
     </div>
 
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>Corrida</h4>
-        </div>
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4">
+            Corrida
+        </a>
     </div>
 
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>RPG</h4>
-        </div>
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4">
+            RPG
+        </a>
     </div>
 
 </div>
-
-<hr class="my-5">
-
 <h2>Sobre a MAETS</h2>
 
 <p class="text-muted">

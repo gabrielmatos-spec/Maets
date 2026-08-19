@@ -42,7 +42,7 @@
                     <p class="card-text text-muted small">Explore Los Santos em um dos maiores sucessos da Rockstar.</p>
                 </div>
                 <div>
-                    <p class="fw-bold text-success fs-5 mb-2">R$ 99,90</p>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 149,90</p>
                     <a href="detalhegta.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     <p class="card-text text-muted small">O futebol mais realista da nova geração.</p>
                 </div>
                 <div>
-                    <p class="fw-bold text-success fs-5 mb-2">R$ 249,90</p>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 125,00</p>
                     <a href="detalhefifa.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>

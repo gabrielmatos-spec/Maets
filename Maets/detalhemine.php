@@ -69,11 +69,21 @@
                 </div>
             </div>
 
-            <!-- Caixas estilo Steam para Preço e Botão -->
-            <div class="p-3 rounded d-flex justify-content-between align-items-center" style="background-color: #000000; border: 1px solid #364653;">
-                <span class="fs-4 text-success fw-bold">R$ 99,90</span>
-                <button class="btn btn-success fw-bold px-4 py-2">Comprar Agora</button>
-            </div>
+      <!-- Caixa de Preço e Botão -->
+<div class="p-3 rounded d-flex justify-content-between align-items-center"
+     style="background-color: #000000; border: 1px solid #364653;">
+
+    <span class="fs-4 text-success fw-bold">
+        R$ 99,90
+    </span>
+
+    <a href="https://www.minecraft.net/pt-br"
+       target="_blank"
+       class="btn btn-success fw-bold px-4 py-2">
+        Comprar Agora
+    </a>
+
+</div>
         </div>
 
         <!-- Descrição Completa na Parte Inferior -->

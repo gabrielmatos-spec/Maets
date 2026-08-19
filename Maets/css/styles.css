@@ -10823,4 +10823,17 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+  .card {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer, 
+.card-body .btn {
+  margin-top: auto;
+}
 }

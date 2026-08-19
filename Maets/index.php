@@ -47,9 +47,7 @@
                 <p class="card-text">
                     Explore Los Santos em um dos maiores sucessos da Rockstar.
                 </p>
-                <a href="detalhejogo.php?id=<?php echo $dados['idAnuncio']; ?>" class="btn btn-primary">
-                    Ver Jogo
-                 </a>
+                <a href="detalhegta.php" class="btn btn-primary">Ver Jogo</a>
 
             </div>
 

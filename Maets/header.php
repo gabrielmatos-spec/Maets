@@ -58,7 +58,10 @@
         }
 
         .banner{
-            background:#000;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('img/indie.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
             color:white;
             padding:60px 0;
         }

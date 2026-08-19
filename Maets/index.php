@@ -61,9 +61,9 @@
     <div class="col-md-3 mb-4">
 
         <div class="card h-100">
-
             <img src="img/mine.jpg.jpeg" class="card-img-top" alt="Minecraft">
 
+                <a href="detalhemine.php" class="btn btn-primary">Ver Jogo</a>
             <div class="card-body">
 
                 <h5 class="card-title">Minecraft</h5>
@@ -73,10 +73,6 @@
                 </p>
 
                 <h5 class="text-success">R$ 99,90</h5>
-
-                <a href="#" class="btn btn-primary w-100">
-                    Ver Jogo
-                </a>
 
             </div>
 

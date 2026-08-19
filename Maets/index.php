@@ -95,9 +95,7 @@
 
                 <h5 class="text-success">R$ 249,90</h5>
 
-                <a href="#" class="btn btn-primary w-100">
-                    Ver Jogo
-                </a>
+                 <a href="detalhefifa.php" class="btn btn-primary w-100">Ver Jogo</a>
 
             </div>
 
@@ -122,9 +120,7 @@
 
                 <h5 class="text-success">R$ 159,90</h5>
 
-                <a href="#" class="btn btn-primary w-100">
-                    Ver Jogo
-                </a>
+                <a href="detalhecyberpunk.php" class="btn btn-primary w-100">Ver Jogo</a>
 
             </div>
 

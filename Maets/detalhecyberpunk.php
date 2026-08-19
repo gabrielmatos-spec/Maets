@@ -46,7 +46,27 @@
             <div>
                 <h1 class="fw-bold text-white mb-2">Cyberpunk 2077</h1>
                 <span class="badge bg-secondary mb-3">RPG / Ação em Mundo Aberto</span>
-                <p class="text-secondary mt-2">Viva aventuras futuristas em Night City.</p>
+                <p class="text-secondary mt-1 mb-3">Viva aventuras futuristas em Night City.</p>
+
+                <!-- FICHA TÉCNICA -->
+                <div class="p-3 rounded my-3" style="background-color: #121e2b; border: 1px solid #1e3548; font-size: 0.9rem;">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Análises Gerais:</span>
+                        <span class="text-info fw-bold">Muito Positivas</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Data de Lançamento:</span>
+                        <span class="text-light">10/Dez/2020</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Desenvolvedor:</span>
+                        <span class="text-light">CD PROJEKT RED</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-0">
+                        <span class="text-secondary">Distribuidora:</span>
+                        <span class="text-light">CD PROJEKT RED</span>
+                    </div>
+                </div>
             </div>
 
             <!-- Caixas estilo Steam para Preço e Botão -->
@@ -62,6 +82,29 @@
             <p class="text-light fs-6" style="line-height: 1.6;">
                 Cyberpunk 2077 é um RPG de ação e aventura em mundo aberto ambientado em Night City, uma megalópole obcecada por poder, glamour e modificações corporais. Mude o visual, o conjunto de habilidades e o estilo de jogo do seu personagem e explore uma cidade vasta onde as suas escolhas moldam a história e o mundo ao seu redor.
             </p>
+        </div>
+
+        <!-- Requisitos do Sistema -->
+        <div class="col-12 mt-4 pt-3" style="border-top: 1px solid #364653;">
+            <h4 class="text-white fw-bold mb-3">Requisitos do Sistema</h4>
+            <div class="row text-secondary small">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h6 class="text-light fw-bold">MÍNIMOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core i7-6700 / AMD Ryzen 5 1600</p>
+                    <p class="mb-1"><strong>Memória:</strong> 12 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 70 GB de espaço disponível (SSD recomendado)</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-light fw-bold">RECOMENDADOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10/11 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core i7-12700 / AMD Ryzen 7 7800X3D</p>
+                    <p class="mb-1"><strong>Memória:</strong> 16 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> NVIDIA GeForce RTX 2060 SUPER / AMD Radeon RX 5700 XT</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 70 GB de espaço disponível (SSD obrigatório)</p>
+                </div>
+            </div>
         </div>
 
     </div>

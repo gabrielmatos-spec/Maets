@@ -46,7 +46,27 @@
             <div>
                 <h1 class="fw-bold text-white mb-2">Grand Theft Auto V</h1>
                 <span class="badge bg-secondary mb-3">Ação / Mundo Aberto</span>
-                <p class="text-secondary mt-2">Explore Los Santos em um dos maiores sucessos da Rockstar Games.</p>
+                <p class="text-secondary mt-1 mb-3">Explore Los Santos em um dos maiores sucessos da Rockstar Games.</p>
+                
+                <!-- FICHA TÉCNICA -->
+                <div class="p-3 rounded my-3" style="background-color: #121e2b; border: 1px solid #1e3548; font-size: 0.9rem;">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Análises Gerais:</span>
+                        <span class="text-info fw-bold">Extremamente Positivas</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Data de Lançamento:</span>
+                        <span class="text-light">14/Abr/2015</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Desenvolvedor:</span>
+                        <span class="text-light">Rockstar North</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-0">
+                        <span class="text-secondary">Distribuidora:</span>
+                        <span class="text-light">Rockstar Games</span>
+                    </div>
+                </div>
             </div>
 
             <!-- Caixas estilo Steam para Preço e Botão -->
@@ -62,6 +82,29 @@
             <p class="text-light fs-6" style="line-height: 1.6;">
                 Quando um jovem golpista, um ladrão de bancos aposentado e um psicopata aterrorizante se envolvem com alguns dos criminosos mais assustadores do submundo, eles precisam realizar uma série de golpes perigosos para sobreviver em uma cidade onde não podem confiar em ninguém.
             </p>
+        </div>
+
+        <!-- Requisitos do Sistema -->
+        <div class="col-12 mt-4 pt-3" style="border-top: 1px solid #364653;">
+            <h4 class="text-white fw-bold mb-3">Requisitos do Sistema</h4>
+            <div class="row text-secondary small">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h6 class="text-light fw-bold">MÍNIMOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core 2 Quad CPU Q6600 @ 2.40GHz / AMD Phenom 9850</p>
+                    <p class="mb-1"><strong>Memória:</strong> 4 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> NVIDIA 9800 GT 1GB / AMD HD 4870 1GB</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 110 GB de espaço disponível</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-light fw-bold">RECOMENDADOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10/11 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core i5 3470 @ 3.2GHz / AMD X8 FX-8350 @ 4GHz</p>
+                    <p class="mb-1"><strong>Memória:</strong> 8 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> NVIDIA GTX 660 2GB / AMD HD 7870 2GB</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 110 GB de espaço disponível</p>
+                </div>
+            </div>
         </div>
 
     </div>

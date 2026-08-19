@@ -46,7 +46,27 @@
             <div>
                 <h1 class="fw-bold text-white mb-2">Minecraft</h1>
                 <span class="badge bg-secondary mb-3">Sobrevivência / Sandbox</span>
-                <p class="text-secondary mt-2">Construa, explore e sobreviva em mundos infinitos de blocos.</p>
+                <p class="text-secondary mt-1 mb-3">Construa, explore e sobreviva em mundos infinitos de blocos.</p>
+                
+                <!-- FICHA TÉCNICA -->
+                <div class="p-3 rounded my-3" style="background-color: #121e2b; border: 1px solid #1e3548; font-size: 0.9rem;">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Análises Gerais:</span>
+                        <span class="text-info fw-bold">Extremamente Positivas</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Data de Lançamento:</span>
+                        <span class="text-light">18/Nov/2011</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Desenvolvedor:</span>
+                        <span class="text-light">Mojang Studios</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-0">
+                        <span class="text-secondary">Distribuidora:</span>
+                        <span class="text-light">Xbox Game Studios</span>
+                    </div>
+                </div>
             </div>
 
             <!-- Caixas estilo Steam para Preço e Botão -->
@@ -62,6 +82,29 @@
             <p class="text-light fs-6" style="line-height: 1.6;">
                 Explore mundos gerados aleatoriamente e construa das casas mais simples aos castelos mais grandiosos. Jogue no modo criativo com recursos ilimitados ou escave fundo no mundo no modo sobrevivência, criando armas e armaduras para se defender das criaturas perigosas.
             </p>
+        </div>
+
+        <!-- Requisitos do Sistema -->
+        <div class="col-12 mt-4 pt-3" style="border-top: 1px solid #364653;">
+            <h4 class="text-white fw-bold mb-3">Requisitos do Sistema</h4>
+            <div class="row text-secondary small">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h6 class="text-light fw-bold">MÍNIMOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10/11 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core i3-3210 / AMD A8-7600</p>
+                    <p class="mb-1"><strong>Memória:</strong> 4 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> Intel HD Graphics 4000 / AMD Radeon R5</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 4 GB de espaço disponível</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-light fw-bold">RECOMENDADOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10/11 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core i5-4690 / AMD A10-7800</p>
+                    <p class="mb-1"><strong>Memória:</strong> 8 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> NVIDIA GeForce 700 / AMD Radeon Rx 200</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 8 GB de espaço disponível (SSD)</p>
+                </div>
+            </div>
         </div>
 
     </div>

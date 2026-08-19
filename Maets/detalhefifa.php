@@ -46,7 +46,27 @@
             <div>
                 <h1 class="fw-bold text-white mb-2">EA Sports FC 26</h1>
                 <span class="badge bg-secondary mb-3">Esporte / Simulação</span>
-                <p class="text-secondary mt-2">O futebol mais realista da nova geração.</p>
+                <p class="text-secondary mt-1 mb-3">O futebol mais realista da nova geração.</p>
+                
+                <!-- FICHA TÉCNICA -->
+                <div class="p-3 rounded my-3" style="background-color: #121e2b; border: 1px solid #1e3548; font-size: 0.9rem;">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Análises Gerais:</span>
+                        <span class="text-warning fw-bold">Ligeiramente Positivas</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Data de Lançamento:</span>
+                        <span class="text-light">26/Set/2025</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Desenvolvedor:</span>
+                        <span class="text-light">EA Canada & EA Romania</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-0">
+                        <span class="text-secondary">Distribuidora:</span>
+                        <span class="text-light">Electronic Arts</span>
+                    </div>
+                </div>
             </div>
 
             <!-- Caixas estilo Steam para Preço e Botão -->
@@ -60,8 +80,31 @@
         <div class="col-12 mt-4 pt-3" style="border-top: 1px solid #364653;">
             <h4 class="text-white fw-bold mb-3">Sobre este jogo</h4>
             <p class="text-light fs-6" style="line-height: 1.6;">
-                Sinta a emoção do esporte rey com o EA Sports FC 26. Com mecânicas aprimoradas, física de bola ultra-realista e as maiores ligas e clubes do mundo, viva a experiência definitiva do futebol no modo carreira, Ultimate Team e partidas online com amigos.
+                Sinta a emoção do esporte rei com o EA Sports FC 26. Com mecânicas aprimoradas, física de bola ultra-realista e as maiores ligas e clubes do mundo, viva a experiência definitiva do futebol no modo carreira, Ultimate Team e partidas online com amigos.
             </p>
+        </div>
+
+        <!-- Requisitos do Sistema -->
+        <div class="col-12 mt-4 pt-3" style="border-top: 1px solid #364653;">
+            <h4 class="text-white fw-bold mb-3">Requisitos do Sistema</h4>
+            <div class="row text-secondary small">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h6 class="text-light fw-bold">MÍNIMOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10/11 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core i5-6600K / AMD Ryzen 5 1600</p>
+                    <p class="mb-1"><strong>Memória:</strong> 8 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> NVIDIA GeForce GTX 1050 Ti 4GB / AMD Radeon RX 570 4GB</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 100 GB de espaço disponível</p>
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-light fw-bold">RECOMENDADOS:</h6>
+                    <p class="mb-1"><strong>SO:</strong> Windows 10/11 64-bit</p>
+                    <p class="mb-1"><strong>Processador:</strong> Intel Core i7-8700 / AMD Ryzen 7 2700X</p>
+                    <p class="mb-1"><strong>Memória:</strong> 12 GB de RAM</p>
+                    <p class="mb-1"><strong>Placa de vídeo:</strong> NVIDIA GeForce GTX 1660 / AMD Radeon RX 5600 XT</p>
+                    <p class="mb-1"><strong>Armazenamento:</strong> 100 GB de espaço disponível (SSD)</p>
+                </div>
+            </div>
         </div>
 
     </div>

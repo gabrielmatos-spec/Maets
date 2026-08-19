@@ -134,12 +134,6 @@
                         <ul class="dropdown-menu dropdown-menu-end">
 
                             <li>
-                                <a class="dropdown-item" href="formAnuncio.php">
-                                    Criar Anúncio
-                                </a>
-                            </li>
-
-                            <li>
                                 <a class="dropdown-item" href="#">
                                     Meus Jogos
                                 </a>

@@ -1,5 +1,34 @@
 <?php include "header.php"; ?>
 
+<h2 class="mb-4">Categorias</h2>
+
+<div class="row">
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            Ação
+        </a>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            Esportes
+        </a>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            Corrida
+        </a>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            RPG
+        </a>
+    </div>
+
+</div>
 <h2 class="mb-4">Jogos em Destaque</h2>
 
 <div class="row">
@@ -107,38 +136,6 @@
 
         </div>
 
-    </div>
-
-</div>
-
-<hr class="my-5">
-
-<h2 class="mb-4">Categorias</h2>
-
-<div class="row text-center">
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>Ação</h4>
-        </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>Esportes</h4>
-        </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>Corrida</h4>
-        </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-        <div class="card p-4">
-            <h4>RPG</h4>
-        </div>
     </div>
 
 </div>

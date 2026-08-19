@@ -24,7 +24,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>MAETS - Plataforma Digital de Distribuição de Jogos</title>
+    <title>MAETS - Plataforma Digital de Compra de Jogos</title>
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
@@ -96,10 +96,6 @@
 
                 <li class="nav-item">
                     <a class="nav-link" href="index.php">Loja</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Categorias</a>
                 </li>
 
                 <li class="nav-item">
@@ -204,7 +200,7 @@
         </h1>
 
         <p class="lead">
-            Plataforma Digital de Distribuição de Jogos
+            Plataforma Digital de Compra de Jogos Digitais
         </p>
 
         <a href="index.php" class="btn btn-primary">

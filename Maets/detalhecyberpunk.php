@@ -2,16 +2,43 @@
 
 <div class="container my-4 text-white">
     <!-- Botão de Voltar estilo Steam -->
-    <a href="index.php" class="btn btn-outline-secondary mb-3">← Voltar para a loja</a>
+    <a href="index.php" class="btn btn-outline-secondary mb-3">&leftarrow; Voltar para a loja</a>
 
     <div class="row p-4 rounded shadow-lg" style="background-color: #0f1922; border: 1px solid #2a475e;">
         
-        <!-- Banner / Imagem Principal (Esquerda) -->
+        <!-- Carrossel de Screenshots (Esquerda) -->
         <div class="col-md-7 mb-3 mb-md-0">
-            <img src="img/ciberpunk.jpeg" 
-                 alt="Cyberpunk 2077" 
-                 class="img-fluid rounded w-100 shadow" 
-                 style="max-height: 400px; object-fit: cover;">
+            <!-- Slider Principal -->
+            <div id="carouselCyberpunk" class="carousel slide rounded overflow-hidden shadow mb-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/ciber1.jpg" class="d-block w-100" style="height: 380px; object-fit: cover;" alt="Cyberpunk 2077 Screenshot 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ciber2.jpg" class="d-block w-100" style="height: 380px; object-fit: cover;" alt="Cyberpunk 2077 Screenshot 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ciber3.jpg" class="d-block w-100" style="height: 380px; object-fit: cover;" alt="Cyberpunk 2077 Screenshot 3">
+                    </div>
+                </div>
+
+                <!-- Botões Anterior / Próximo -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCyberpunk" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCyberpunk" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+
+            <!-- Miniaturas Clicáveis (Thumbnails) -->
+            <div class="d-flex gap-2 justify-content-start">
+                <img src="img/ciber1.jpg" data-bs-target="#carouselCyberpunk" data-bs-slide-to="0" class="img-thumbnail bg-dark border-secondary active" style="width: 30%; height: 75px; object-fit: cover; cursor: pointer;" alt="Thumb 1">
+                <img src="img/ciber2.jpg" data-bs-target="#carouselCyberpunk" data-bs-slide-to="1" class="img-thumbnail bg-dark border-secondary" style="width: 30%; height: 75px; object-fit: cover; cursor: pointer;" alt="Thumb 2">
+                <img src="img/ciber3.jpg" data-bs-target="#carouselCyberpunk" data-bs-slide-to="2" class="img-thumbnail bg-dark border-secondary" style="width: 30%; height: 75px; object-fit: cover; cursor: pointer;" alt="Thumb 3">
+            </div>
         </div>
 
         <!-- Painel Lateral de Informações e Compra (Direita) -->

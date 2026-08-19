@@ -30,102 +30,74 @@
 
 </div>
 <h2 class="mb-4">Jogos em Destaque</h2>
-
-<div class="row">
-
-    <!-- GTA V -->
-    <div class="col-md-3 mb-4">
-
-        <div class="card h-100">
-
-            <img src="img/gtaV.jpeg" class="card-img-top" alt="GTA V">
-
-            <div class="card-body">
-
-                <h5 class="card-title">Grand Theft Auto V</h5>
-
-                <p class="card-text">
-                    Explore Los Santos em um dos maiores sucessos da Rockstar.
-                </p>
-                <a href="detalhegta.php" class="btn btn-primary">Ver Jogo</a>
-
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    
+    <!-- Card GTA V -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/gtaV.jpeg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="GTA V">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">Grand Theft Auto V</h5>
+                    <p class="card-text text-muted small">Explore Los Santos em um dos maiores sucessos da Rockstar.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 99,90</p>
+                    <a href="detalhegta.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
             </div>
-
         </div>
-
     </div>
 
-    <!-- Minecraft -->
-    <div class="col-md-3 mb-4">
-
-        <div class="card h-100">
-            <img src="img/mine.jpg.jpeg" class="card-img-top" alt="Minecraft">
-
-                <a href="detalhemine.php" class="btn btn-primary">Ver Jogo</a>
-            <div class="card-body">
-
-                <h5 class="card-title">Minecraft</h5>
-
-                <p class="card-text">
-                    Construa, explore e sobreviva em mundos infinitos.
-                </p>
-
-                <h5 class="text-success">R$ 99,90</h5>
-
+    <!-- Card Minecraft -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/mine.jpg.jpeg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Minecraft">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">Minecraft</h5>
+                    <p class="card-text text-muted small">Construa, explore e sobreviva em mundos infinitos.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 99,90</p>
+                    <a href="detalhemine.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
             </div>
-
         </div>
-
     </div>
 
-    <!-- EA Sports FC -->
-    <div class="col-md-3 mb-4">
-
-        <div class="card h-100">
-
-            <img src="img/fc26.jpeg" class="card-img-top" alt="EA Sports FC">
-
-            <div class="card-body">
-
-                <h5 class="card-title">EA Sports FC 26</h5>
-
-                <p class="card-text">
-                    O futebol mais realista da nova geração.
-                </p>
-
-                <h5 class="text-success">R$ 249,90</h5>
-
-                 <a href="detalhefifa.php" class="btn btn-primary w-100">Ver Jogo</a>
-
+    <!-- Card EA Sports FC 26 -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/fc26.jpeg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="EA Sports FC 26">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">EA Sports FC 26</h5>
+                    <p class="card-text text-muted small">O futebol mais realista da nova geração.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 249,90</p>
+                    <a href="detalhefifa.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
             </div>
-
         </div>
-
     </div>
 
-    <!-- Cyberpunk -->
-    <div class="col-md-3 mb-4">
-
-        <div class="card h-100">
-
-            <img src="img/ciberpunk.jpeg" class="card-img-top" alt="Cyberpunk">
-
-            <div class="card-body">
-
-                <h5 class="card-title">Cyberpunk 2077</h5>
-
-                <p class="card-text">
-                    Viva aventuras futuristas em Night City.
-                </p>
-
-                <h5 class="text-success">R$ 159,90</h5>
-
-                <a href="detalhecyberpunk.php" class="btn btn-primary w-100">Ver Jogo</a>
-
+    <!-- Card Cyberpunk 2077 -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/ciberpunk.jpeg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Cyberpunk 2077">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">Cyberpunk 2077</h5>
+                    <p class="card-text text-muted small">Viva aventuras futuristas em Night City.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 159,90</p>
+                    <a href="detalhecyberpunk.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
             </div>
-
         </div>
-
     </div>
 
 </div>

@@ -73,15 +73,20 @@
 
 
     <!-- Funcionalidades -->
-    <h2 class="text-center mb-4">
-        O que você encontra na MAETS?
-    </h2>
+<h2 class="text-center mb-4">
+    O que você encontra na MAETS?
+</h2>
 
-    <div class="row text-center">
+<div class="row text-center">
 
-        <div class="col-md-4 mb-4">
+    <!-- Jogos -->
+    <div class="col-md-4 mb-4">
 
-            <div class="p-4 border rounded h-100">
+        <a href="index.php"
+           class="text-decoration-none text-dark">
+
+            <div class="p-4 border rounded h-100"
+                 style="cursor:pointer;">
 
                 <i class="bi bi-controller fs-1"></i>
 
@@ -96,12 +101,19 @@
 
             </div>
 
-        </div>
+        </a>
+
+    </div>
 
 
-        <div class="col-md-4 mb-4">
+    <!-- Categorias -->
+    <div class="col-md-4 mb-4">
 
-            <div class="p-4 border rounded h-100">
+        <a href="categorias.php"
+           class="text-decoration-none text-dark">
+
+            <div class="p-4 border rounded h-100"
+                 style="cursor:pointer;">
 
                 <i class="bi bi-grid fs-1"></i>
 
@@ -116,12 +128,19 @@
 
             </div>
 
-        </div>
+        </a>
+
+    </div>
 
 
-        <div class="col-md-4 mb-4">
+    <!-- Compra -->
+    <div class="col-md-4 mb-4">
 
-            <div class="p-4 border rounded h-100">
+        <a href="compras.php"
+           class="text-decoration-none text-dark">
+
+            <div class="p-4 border rounded h-100"
+                 style="cursor:pointer;">
 
                 <i class="bi bi-cart3 fs-1"></i>
 
@@ -136,9 +155,11 @@
 
             </div>
 
-        </div>
+        </a>
 
     </div>
+
+</div>
 
 
     <!-- Projeto -->

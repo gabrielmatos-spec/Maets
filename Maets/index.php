@@ -102,15 +102,4 @@
 
 </div>
 
-<hr class="my-5">
-
-<h2>Sobre a MAETS</h2>
-
-<p class="text-muted">
-
-A MAETS é uma plataforma digital desenvolvida para compra de jogos digitais.
-Nosso objetivo é oferecer uma experiência simples, organizada e segura para que os usuários encontrem seus jogos favoritos.
-
-</p>
-
 <?php include "footer.php"; ?>

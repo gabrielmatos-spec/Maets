@@ -38,39 +38,72 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
-    <style>
+<style>
 
-        body{
-            background:#f8f9fa;
-        }
+    body{
+        background:#0f1922;
+        color:white;
+    }
 
-        .navbar{
-            background:#171a21;
-        }
+    .navbar{
+        background:#171a21;
+    }
 
-        .navbar-brand,
-        .nav-link{
-            color:white !important;
-        }
+    .navbar-brand,
+    .nav-link{
+        color:white !important;
+    }
 
-        .nav-link:hover{
-            color:#66c0f4 !important;
-        }
+    .nav-link:hover{
+        color:#66c0f4 !important;
+    }
 
-        .banner{
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('img/indie.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center top;
-            color:white;
-            padding:60px 0;
-        }
+    .banner{
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.7)
+        ), url('img/indie.jpg');
 
-        .audiowide{
-            font-family:"Audiowide", sans-serif;
-        }
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position:center top;
 
-    </style>
+        color:white;
+        padding:60px 0;
+    }
+
+    .audiowide{
+        font-family:"Audiowide", sans-serif;
+    }
+
+    /* Cards dos jogos */
+    .card{
+        background:#171a21;
+        color:white;
+        border:1px solid #2a475e;
+    }
+
+    .card-title{
+        color:white;
+    }
+
+    .card-text{
+        color:#c7d5e0;
+    }
+
+    /* Botões de categoria */
+    .btn-light{
+        background:#171a21;
+        color:white;
+        border:1px solid #2a475e;
+    }
+
+    .btn-light:hover{
+        background:#2a475e;
+        color:white;
+    }
+
+</style>
 
 </head>
 
@@ -98,7 +131,7 @@
             <ul class="navbar-nav me-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Loja</a>
+                    <a class="nav-link" href="loja.php">Loja</a>
                 </li>
 
                 <li class="nav-item">

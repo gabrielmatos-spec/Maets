@@ -1,6 +1,6 @@
 <?php include "header.php"; ?>
 
-<div class="container my-5">
+<div class="container my-5 sobre-page">
 
     <!-- Botão voltar -->
     <a href="index.php" class="btn btn-outline-secondary mb-4">
@@ -10,11 +10,11 @@
     <!-- Título -->
     <div class="text-center mb-5">
 
-        <h1 class="fw-bold">
+        <h1 class="fw-bold text-white">
             Sobre a MAETS
         </h1>
 
-        <p class="text-muted">
+        <p class="text-white">
             Plataforma Digital de Compra de Jogos Digitais
         </p>
 
@@ -26,19 +26,18 @@
 
         <div class="col-md-6">
 
-            <h2 class="mb-3">
+            <h2 class="mb-3 text-white">
                 O que é a MAETS?
             </h2>
 
-            <p>
+            <p class="text-white">
                 A MAETS é uma plataforma digital desenvolvida
                 para facilitar a busca e a compra de jogos digitais.
             </p>
 
-            <p>
+            <p class="text-white">
                 O projeto foi criado com o objetivo de apresentar
-                uma loja de jogos simples, organizada e fácil de usar,
-                tendo como referência plataformas digitais de jogos.
+                uma loja de jogos simples, organizada e fácil de usar.
             </p>
 
         </div>
@@ -55,107 +54,112 @@
     </div>
 
 
-    <!-- Objetivo -->
-    <div class="p-4 rounded shadow-sm mb-5"
-         style="background-color: #f1f1f1;">
+    <!-- Nosso objetivo -->
+<div class="text-center my-5 py-4">
 
-        <h2 class="mb-3">
-            Nosso objetivo
-        </h2>
+    <h2 class="fw-bold text-white mb-3">
+        Nosso objetivo
+    </h2>
 
-        <p class="mb-0">
-            Criar uma plataforma onde os usuários possam
-            encontrar diferentes jogos, visualizar suas informações,
-            conhecer suas categorias e acessar as opções de compra.
-        </p>
+    <p class="text-white mx-auto"
+       style="max-width: 800px; line-height: 1.7;">
 
-    </div>
+        Criar uma plataforma onde os usuários possam
+        encontrar diferentes jogos, visualizar suas informações,
+        conhecer suas categorias e acessar as opções de compra.
 
+    </p>
 
-    <!-- Funcionalidades -->
-<h2 class="text-center mb-4">
-    O que você encontra na MAETS?
-</h2>
+</div>
 
-<div class="row text-center">
+<!-- O que você encontra -->
+<div class="my-5 py-4">
 
-    <!-- Jogos -->
-    <div class="col-md-4 mb-4">
+    <h2 class="text-center fw-bold text-white mb-5">
+        O que você encontra na MAETS?
+    </h2>
 
-        <a href="index.php"
-           class="text-decoration-none text-dark">
+    <div class="row text-center">
 
-            <div class="p-4 border rounded h-100"
-                 style="cursor:pointer;">
+        <!-- Jogos -->
+        <div class="col-md-4 mb-4">
 
-                <i class="bi bi-controller fs-1"></i>
+            <a href="loja.php"
+               class="text-decoration-none">
 
-                <h4 class="mt-3">
-                    Jogos
-                </h4>
+                <div class="p-4 rounded h-100"
+                     style="background:#171a21; border:1px solid #2a475e;">
 
-                <p class="text-muted">
-                    Encontre diferentes jogos e conheça
-                    suas principais informações.
-                </p>
+                    <i class="bi bi-controller text-white fs-1"></i>
 
-            </div>
+                    <h4 class="mt-3 text-white">
+                        Jogos
+                    </h4>
 
-        </a>
+                    <p class="text-white">
+                        Encontre diferentes jogos e conheça
+                        suas principais informações.
+                    </p>
 
-    </div>
+                </div>
 
+            </a>
 
-    <!-- Categorias -->
-    <div class="col-md-4 mb-4">
-
-        <a href="categorias.php"
-           class="text-decoration-none text-dark">
-
-            <div class="p-4 border rounded h-100"
-                 style="cursor:pointer;">
-
-                <i class="bi bi-grid fs-1"></i>
-
-                <h4 class="mt-3">
-                    Categorias
-                </h4>
-
-                <p class="text-muted">
-                    Navegue pelos jogos organizados
-                    em diferentes categorias.
-                </p>
-
-            </div>
-
-        </a>
-
-    </div>
+        </div>
 
 
-    <!-- Compra -->
-    <div class="col-md-4 mb-4">
+        <!-- Categorias -->
+        <div class="col-md-4 mb-4">
 
-        <a href="compras.php"
-           class="text-decoration-none text-dark">
+            <a href="categorias.php"
+               class="text-decoration-none">
 
-            <div class="p-4 border rounded h-100"
-                 style="cursor:pointer;">
+                <div class="p-4 rounded h-100"
+                     style="background:#171a21; border:1px solid #2a475e;">
 
-                <i class="bi bi-cart3 fs-1"></i>
+                    <i class="bi bi-grid text-white fs-1"></i>
 
-                <h4 class="mt-3">
-                    Compra
-                </h4>
+                    <h4 class="mt-3 text-white">
+                        Categorias
+                    </h4>
 
-                <p class="text-muted">
-                    Acesse as opções de compra
-                    disponíveis para cada jogo.
-                </p>
+                    <p class="text-white">
+                        Navegue pelos jogos organizados
+                        em diferentes categorias.
+                    </p>
 
-            </div>
+                </div>
 
-        </a>
+            </a>
+
+        </div>
+
+
+        <!-- Compra -->
+        <div class="col-md-4 mb-4">
+
+            <a href="compras.php"
+               class="text-decoration-none">
+
+                <div class="p-4 rounded h-100"
+                     style="background:#171a21; border:1px solid #2a475e;">
+
+                    <i class="bi bi-cart3 text-white fs-1"></i>
+
+                    <h4 class="mt-3 text-white">
+                        Compra
+                    </h4>
+
+                    <p class="text-white">
+                        Acesse as opções de compra
+                        disponíveis para cada jogo.
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
 
     </div>
 

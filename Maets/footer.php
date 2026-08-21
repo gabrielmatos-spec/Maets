@@ -9,10 +9,10 @@
 
             <div class="col-md-6">
 
-                <h5 class="text-primary">MAETS</h5>
+                <h5 class="text-white">MAETS</h5>
 
                 <p class="mb-0">
-                    Plataforma Digital de Distribuição de Jogos.
+                    Plataforma Digital de Compra de Jogos.
                 </p>
 
             </div>

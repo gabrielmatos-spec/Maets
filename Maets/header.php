@@ -194,9 +194,9 @@
 
     <div class="container text-center">
 
-        <img src="img/logo.maets.jpeg"
-             width="150"
-             class="mb-3">
+        <img src="img/logo.maets-removebg-preview.png"
+            width="220"
+            style="margin-bottom: -70px;">
 
         <h1 class="audiowide">
             MAETS

@@ -135,7 +135,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Promoções</a>
+                    <a class="nav-link" href="promocoes.php">Promoções</a>
                 </li>
 
                 <li class="nav-item">

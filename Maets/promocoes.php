@@ -1,0 +1,105 @@
+<?php include "header.php"; ?>
+
+<h2 class="mb-4">Promoções</h2>
+
+<div class="row">
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            Ação
+        </a>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            Esportes
+        </a>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            Corrida
+        </a>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+            RPG
+        </a>
+    </div>
+
+</div>
+<h2 class="mb-4">Jogos em Promoção:</h2>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    
+    <!-- Card Call of Duty Modern Warfare III -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/callofduty.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Call of Duty Modern Warfare III">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">Call of Duty Modern Warfare III</h5>
+                    <p class="card-text text-muted small">Guerra intensa, ação explosiva e adrenalina do início ao fim.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 78,90</p>
+                    <a href="detalhegta.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Black Mith Wukong -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/Blackmith.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Black Mith Wukong">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">Black Mith Wukong</h5>
+                    <p class="card-text text-muted small">Uma jornada épica de fantasia, mitologia e batalhas intensas.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 150,90</p>
+                    <a href="detalhemine.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Tekken 8 -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/tekken.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Tekken 8">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">Tekken 8</h5>
+                    <p class="card-text text-muted small">Lutas eletrizantes, golpes devastadores e rivalidades épicas.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 105,50</p>
+                    <a href="detalhefifa.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Mafia -->
+    <div class="col">
+        <div class="card h-100 shadow-sm">
+            <img src="img/mafia.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Mafia">
+            <div class="card-body d-flex flex-column justify-content-between">
+                <div>
+                    <h5 class="card-title fw-bold">Mafia</h5>
+                    <p class="card-text text-muted small">Uma jornada de crime, poder e vingança no submundo da máfia.</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 30,00</p>
+                    <a href="detalhecyberpunk.php" class="btn btn-primary w-100">Ver Jogo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<?php include "footer.php"; ?>

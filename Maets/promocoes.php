@@ -35,7 +35,7 @@
     <!-- Card Call of Duty Modern Warfare III -->
     <div class="col">
         <div class="card h-100 shadow-sm">
-            <img src="img/callofduty.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Call of Duty Modern Warfare III">
+            <img src="img/callof.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Call of Duty Modern Warfare III">
             <div class="card-body d-flex flex-column justify-content-between">
                 <div>
                     <h5 class="card-title fw-bold">Call of Duty Modern Warfare III</h5>
@@ -43,7 +43,7 @@
                 </div>
                 <div>
                     <p class="fw-bold text-success fs-5 mb-2">R$ 78,90</p>
-                    <a href="detalhegta.php" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheCallof.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
     <!-- Card Black Mith Wukong -->
     <div class="col">
         <div class="card h-100 shadow-sm">
-            <img src="img/Blackmith.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Black Mith Wukong">
+            <img src="img/BLACKK.png" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Black Mith Wukong">
             <div class="card-body d-flex flex-column justify-content-between">
                 <div>
                     <h5 class="card-title fw-bold">Black Mith Wukong</h5>
@@ -60,7 +60,7 @@
                 </div>
                 <div>
                     <p class="fw-bold text-success fs-5 mb-2">R$ 150,90</p>
-                    <a href="detalhemine.php" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheBlack.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
                 </div>
                 <div>
                     <p class="fw-bold text-success fs-5 mb-2">R$ 105,50</p>
-                    <a href="detalhefifa.php" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheTekken.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
     <!-- Card Mafia -->
     <div class="col">
         <div class="card h-100 shadow-sm">
-            <img src="img/mafia.jpg" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Mafia">
+            <img src="img/MAFIAA.png" class="card-img-top" style="height: 280px; object-fit: cover; object-position: center;" alt="Mafia">
             <div class="card-body d-flex flex-column justify-content-between">
                 <div>
                     <h5 class="card-title fw-bold">Mafia</h5>
@@ -94,7 +94,7 @@
                 </div>
                 <div>
                     <p class="fw-bold text-success fs-5 mb-2">R$ 30,00</p>
-                    <a href="detalhecyberpunk.php" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheMafia.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>

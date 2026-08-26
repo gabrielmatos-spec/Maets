@@ -73,114 +73,211 @@ desenvolvimento tecnológico e a produção nacional de conteúdos digitais.
 
 </div>
 
-<!-- O que você encontra -->
-<div class="my-5 py-4">
+<!-- O que você encontra na MAETS -->
+<section class="py-5">
 
-    <h2 class="text-center fw-bold text-white mb-5">
-        O que você encontra na MAETS?
-    </h2>
+    <div class="container">
 
-    <div class="row text-center">
+        <h2 class="text-center text-white mb-5">
+            O que você encontra na MAETS?
+        </h2>
 
-        <!-- Jogos -->
-        <div class="col-md-4 mb-4">
+        <div class="row g-4">
 
-            <a href="loja.php"
-               class="text-decoration-none">
+            <!-- Tabela 1 - Jogos -->
+            <div class="col-md-4">
 
-                <div class="p-4 rounded h-100"
-                     style="background:#171a21; border:1px solid #2a475e;">
+                <div class="p-4 rounded"
+                     style="background-color: #171a21; border: 1px solid #2a475e; height: 100%;">
 
-                    <i class="bi bi-controller text-white fs-1"></i>
-
-                    <h4 class="mt-3 text-white">
+                    <h3 class="text-white text-center mb-4">
                         Jogos
-                    </h4>
+                    </h3>
 
-                    <p class="text-white">
-                        Encontre diferentes jogos e conheça
-                        suas principais informações.
-                    </p>
+                    <table class="table table-dark table-bordered">
+
+                        <tbody>
+
+                            <tr>
+                                <th class="text-white">
+                                    Diversidade
+                                </th>
+
+                                <td class="text-white">
+                                    A MAETS reúne diferentes tipos de jogos,
+                                    permitindo que o usuário encontre opções
+                                    de acordo com seus interesses.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-white">
+                                    Informações
+                                </th>
+
+                                <td class="text-white">
+                                    Cada jogo possui uma página com informações
+                                    como descrição, preço, categoria e detalhes
+                                    sobre o título.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-white">
+                                    Exploração
+                                </th>
+
+                                <td class="text-white">
+                                    O usuário pode navegar pela plataforma e
+                                    conhecer diferentes jogos disponíveis
+                                    na loja.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
 
                 </div>
 
-            </a>
-
-        </div>
+            </div>
 
 
-        <!-- Categorias -->
-        <div class="col-md-4 mb-4">
+            <!-- Tabela 2 - Categorias -->
+            <div class="col-md-4">
 
-            <a href="categorias.php"
-               class="text-decoration-none">
+                <div class="p-4 rounded"
+                     style="background-color: #171a21; border: 1px solid #2a475e; height: 100%;">
 
-                <div class="p-4 rounded h-100"
-                     style="background:#171a21; border:1px solid #2a475e;">
-
-                    <i class="bi bi-grid text-white fs-1"></i>
-
-                    <h4 class="mt-3 text-white">
+                    <h3 class="text-white text-center mb-4">
                         Categorias
-                    </h4>
+                    </h3>
 
-                    <p class="text-white">
-                        Navegue pelos jogos organizados
-                        em diferentes categorias.
-                    </p>
+                    <table class="table table-dark table-bordered">
+
+                        <tbody>
+
+                            <tr>
+                                <th class="text-white">
+                                    Organização
+                                </th>
+
+                                <td class="text-white">
+                                    Os jogos são organizados por categorias
+                                    para facilitar a navegação e a busca
+                                    dentro da plataforma.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-white">
+                                    Gêneros
+                                </th>
+
+                                <td class="text-white">
+                                    Entre as categorias estão gêneros como
+                                    ação, esportes, corrida e RPG.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-white">
+                                    Navegação
+                                </th>
+
+                                <td class="text-white">
+                                    A separação por categorias permite que
+                                    o usuário encontre mais facilmente
+                                    jogos relacionados aos seus interesses.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
 
                 </div>
 
-            </a>
-
-        </div>
+            </div>
 
 
-        <!-- Compra -->
-        <div class="col-md-4 mb-4">
+            <!-- Tabela 3 - Compra -->
+            <div class="col-md-4">
 
-            <a href="compras.php"
-               class="text-decoration-none">
+                <div class="p-4 rounded"
+                     style="background-color: #171a21; border: 1px solid #2a475e; height: 100%;">
 
-                <div class="p-4 rounded h-100"
-                     style="background:#171a21; border:1px solid #2a475e;">
-
-                    <i class="bi bi-cart3 text-white fs-1"></i>
-
-                    <h4 class="mt-3 text-white">
+                    <h3 class="text-white text-center mb-4">
                         Compra
-                    </h4>
+                    </h3>
 
-                    <p class="text-white">
-                        Acesse as opções de compra
-                        disponíveis para cada jogo.
-                    </p>
+                    <table class="table table-dark table-bordered">
+
+                        <tbody>
+
+                            <tr>
+                                <th class="text-white">
+                                    Escolha
+                                </th>
+
+                                <td class="text-white">
+                                    O usuário pode escolher um jogo disponível
+                                    na plataforma e acessar sua página para
+                                    consultar suas informações.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-white">
+                                    Informações
+                                </th>
+
+                                <td class="text-white">
+                                    Antes da compra, é possível consultar
+                                    detalhes do jogo e verificar o preço
+                                    apresentado na plataforma.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th class="text-white">
+                                    Acesso
+                                </th>
+
+                                <td class="text-white">
+                                    A MAETS direciona o usuário para a opção
+                                    de compra correspondente ao jogo escolhido.
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
 
                 </div>
 
-            </a>
+            </div>
 
         </div>
 
     </div>
 
-</div>
+</section>
 
 
-    <!-- Projeto -->
-    <div class="text-center mt-5">
+<!-- Projeto acadêmico -->
+<section class="py-5">
 
-        <h3>
+    <div class="container text-center">
+
+        <h2 class="text-white">
             Projeto acadêmico
-        </h3>
+        </h2>
 
-        <p class="text-muted">
-            Desenvolvido pelos alunos do
-            IFPR - Campus Telêmaco Borba.
+        <p class="text-secondary">
+            Desenvolvido pelos alunos do IFPR - Campus Telêmaco Borba.
         </p>
 
     </div>
 
-</div>
-
-<?php include "footer.php"; ?>
+</section>

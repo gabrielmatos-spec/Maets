@@ -223,25 +223,25 @@ $pesquisa = isset($_GET['pesquisa']) ? strtolower(trim($_GET['pesquisa'])) : "";
             strpos("red dead", $pesquisa) !== false
         ): ?>
 
-        <div class="col">
+     <div class="col">
 
             <div class="card h-100 shadow-sm">
 
-                <img src="img/rdr2.jpg"
+                <img src="img/rdr.jpg"
                      class="card-img-top"
                      style="height: 280px; object-fit: cover; object-position: center;"
-                     alt="Red Dead Redemption 2">
+                     alt="Rdr">
 
                 <div class="card-body d-flex flex-column justify-content-between">
 
                     <div>
 
                         <h5 class="card-title fw-bold">
-                            Red Dead Redemption 2
+                       Red Dead Redemption II
                         </h5>
 
                         <p class="card-text text-muted small">
-                            Viva uma grande aventura no velho oeste americano.
+                            Explore Los Santos em um dos maiores sucessos da Rockstar.
                         </p>
 
                     </div>
@@ -249,10 +249,10 @@ $pesquisa = isset($_GET['pesquisa']) ? strtolower(trim($_GET['pesquisa'])) : "";
                     <div>
 
                         <p class="fw-bold text-success fs-5 mb-2">
-                            R$ 199,90
+                            R$ 149,90
                         </p>
 
-                        <a href="rdr2.php"
+                        <a href="detalheRdr.php"
                            class="btn btn-primary w-100">
                             Ver Jogo
                         </a>

@@ -64,10 +64,11 @@
     <p class="text-white mx-auto"
        style="max-width: 800px; line-height: 1.7;">
 
-        Criar uma plataforma onde os usuários possam
-        encontrar diferentes jogos, visualizar suas informações,
-        conhecer suas categorias e acessar as opções de compra.
-
+        A plataforma MAETS: Plataforma Digital de Distribuição de Jogos Digitais surge com a
+proposta de criar um ambiente digital voltado principalmente ao entretenimento, permitindo
+a compra de jogos digitais desenvolvidos. Além de
+oferecer acesso facilitado aos jogos, a plataforma busca incentivar a criatividade, o
+desenvolvimento tecnológico e a produção nacional de conteúdos digitais.
     </p>
 
 </div>

@@ -21,20 +21,42 @@
         <form action="actionLogin.php" method="POST" class="was-validated">
 
             <div class="form-floating mt-3 mb-3">
-                <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Email" class="form-control" required>
-                <label for="emailUsuario">Email</label>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback"></div>
+
+                <input type="email"
+                    name="emailUsuario"
+                    id="emailUsuario"
+                    placeholder="Email"
+                    class="form-control"
+                    style="background-color:#171a21; color:white; border:1px solid #2a475e;"
+                    required>
+
+                <label for="emailUsuario"
+                    style="color:white;">
+                    Email
+                </label>
+
             </div>
 
             <div class="form-floating mt-3 mb-3">
-                <input type="password" name="senhaUsuario" id="senhaUsuario" placeholder="Senha" class="form-control" minlength="3" maxlength="8" required>
-                <label for="senhaUsuario">Senha</label>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback"></div>
+
+                <input type="password"
+                    name="senhaUsuario"
+                    id="senhaUsuario"
+                    placeholder="Senha"
+                    class="form-control"
+                    minlength="3"
+                    maxlength="8"
+                    style="background-color:#171a21; color:white; border:1px solid #2a475e;"
+                    required>
+
+                <label for="senhaUsuario"
+                    style="color:white;">
+                    Senha
+                </label>
+
             </div>
 
-            <button type="submit" class="btn btn-outline-dark">Login</button>
+           <button type="submit" class="btn btn-dark">Login</button>
 
         </form>
 

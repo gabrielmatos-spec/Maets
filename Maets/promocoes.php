@@ -1,34 +1,4 @@
 <?php include "header.php"; ?>
-
-<h2 class="mb-4">Promoções</h2>
-
-<div class="row">
-
-    <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
-            Ação
-        </a>
-    </div>
-
-    <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
-            Esportes
-        </a>
-    </div>
-
-    <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
-            Corrida
-        </a>
-    </div>
-
-    <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
-            RPG
-        </a>
-    </div>
-
-</div>
 <h2 class="mb-4">Jogos em Promoção:</h2>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
     
@@ -42,7 +12,7 @@
                     <p class="card-text text-muted small">Guerra intensa, ação explosiva e adrenalina do início ao fim.</p>
                 </div>
                 <div>
-                    <p class="fw-bold text-success fs-5 mb-2">R$ 78,90</p>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 299,00</p>
                     <a href="detalheCallof.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
@@ -59,7 +29,7 @@
                     <p class="card-text text-muted small">Uma jornada épica de fantasia, mitologia e batalhas intensas.</p>
                 </div>
                 <div>
-                    <p class="fw-bold text-success fs-5 mb-2">R$ 150,90</p>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 229,99</p>
                     <a href="detalheBlack.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
@@ -76,7 +46,7 @@
                     <p class="card-text text-muted small">Lutas eletrizantes, golpes devastadores e rivalidades épicas.</p>
                 </div>
                 <div>
-                    <p class="fw-bold text-success fs-5 mb-2">R$ 105,50</p>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 106,14</p>
                     <a href="detalheTekken.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
@@ -93,7 +63,7 @@
                     <p class="card-text text-muted small">Uma jornada de crime, poder e vingança no submundo da máfia.</p>
                 </div>
                 <div>
-                    <p class="fw-bold text-success fs-5 mb-2">R$ 30,00</p>
+                    <p class="fw-bold text-success fs-5 mb-2">R$ 31,00</p>
                     <a href="detalheMafia.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>

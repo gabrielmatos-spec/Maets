@@ -1,35 +1,151 @@
 <?php include "header.php"; ?>
 
+<?php
+
+$jogos = [
+
+    [
+        "nome" => "Grand Theft Auto V",
+        "categoria" => "Ação",
+        "genero" => "Ação / Mundo Aberto",
+        "descricao" => "Explore Los Santos em uma grande aventura de mundo aberto.",
+        "preco" => 149.90,
+        "imagem" => "img/gtaV.jpeg",
+        "pagina" => "gta.php"
+    ],
+
+    [
+        "nome" => "Minecraft",
+        "categoria" => "Sandbox",
+        "genero" => "Sobrevivência / Sandbox",
+        "descricao" => "Construa, explore e sobreviva em mundos feitos de blocos.",
+        "preco" => 99.90,
+        "imagem" => "img/mine.jpg.jpeg",
+        "pagina" => "minecraft.php"
+    ],
+
+    [
+        "nome" => "Cyberpunk 2077",
+        "categoria" => "RPG",
+        "genero" => "RPG / Ação / Mundo Aberto",
+        "descricao" => "Explore Night City em uma aventura futurista.",
+        "preco" => 159.90,
+        "imagem" => "img/ciberpunk.jpeg",
+        "pagina" => "cyberpunk.php"
+    ],
+
+    [
+        "nome" => "Red Dead Redemption 2",
+        "categoria" => "Aventura",
+        "genero" => "Ação / Aventura / Mundo Aberto",
+        "descricao" => "Viva uma grande aventura no velho oeste americano.",
+        "preco" => 199.90,
+        "imagem" => "img/rdr2.jpg",
+        "pagina" => "rdr2.php"
+    ],
+
+    [
+        "nome" => "God of War",
+        "categoria" => "Ação",
+        "genero" => "Ação / Aventura",
+        "descricao" => "Acompanhe Kratos e Atreus em uma jornada pela mitologia nórdica.",
+        "preco" => 179.90,
+        "imagem" => "img/godofwar.jpg",
+        "pagina" => "godofwar.php"
+    ],
+
+    [
+        "nome" => "Forza Horizon 5",
+        "categoria" => "Corrida",
+        "genero" => "Corrida / Mundo Aberto",
+        "descricao" => "Corra por paisagens incríveis e explore um enorme mundo aberto.",
+        "preco" => 129.90,
+        "imagem" => "img/forza.jpg",
+        "pagina" => "forza.php"
+    ]
+
+];
+
+
+
+$pesquisa = isset($_GET["pesquisa"])
+    ? trim($_GET["pesquisa"])
+    : "";
+
+
+$categoriaSelecionada = isset($_GET["categoria"])
+    ? $_GET["categoria"]
+    : "Todas";
+
+
+$jogosFiltrados = [];
+
+foreach ($jogos as $jogo) {
+
+    $nome = strtolower($jogo["nome"]);
+    $genero = strtolower($jogo["genero"]);
+    $textoPesquisa = strtolower($pesquisa);
+
+    $encontrouPesquisa =
+        $pesquisa === "" ||
+        strpos($nome, $textoPesquisa) !== false ||
+        strpos($genero, $textoPesquisa) !== false;
+
+    $encontrouCategoria =
+        $categoriaSelecionada === "Todas" ||
+        $jogo["categoria"] === $categoriaSelecionada;
+
+    if ($encontrouPesquisa && $encontrouCategoria) {
+        $jogosFiltrados[] = $jogo;
+    }
+}
+
+$categorias = [
+    "Todas",
+    "Ação",
+    "Sandbox",
+    "RPG",
+    "Aventura",
+    "Corrida"
+];
+
+?>
+
 <div class="container my-5">
 
-    <!-- Título da loja -->
+
     <div class="text-center mb-5">
 
         <h1 class="fw-bold">
-            Loja De Jogos
+            Loja de Jogos
         </h1>
 
         <p class="text-muted">
-            Encontre seus jogos favoritos
+            Encontre seus jogos favoritos no MAETS
         </p>
 
     </div>
 
+    <div class="row justify-content-center mb-4">
 
-    <!-- Pesquisa -->
-    <div class="row justify-content-center mb-5">
+        <div class="col-lg-8">
 
-        <div class="col-md-8">
+            <form method="GET">
 
-            <form>
+                <div class="input-group input-group-lg">
 
-                <div class="input-group">
+                    <input
+                        type="text"
+                        name="pesquisa"
+                        class="form-control"
+                        placeholder="Pesquisar jogo..."
+                        value="<?php echo htmlspecialchars($pesquisa); ?>"
+                    >
 
-                    <input type="text"
-                           class="form-control"
-                           placeholder="Pesquisar jogo...">
-
-                    <button class="btn btn-dark" type="submit">
+                    <button
+                        type="submit"
+                        class="btn btn-dark"
+                    >
                         <i class="bi bi-search"></i>
                         Pesquisar
                     </button>
@@ -42,229 +158,196 @@
 
     </div>
 
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
 
-    <!-- Categorias -->
-    <h2 class="mb-4">
-        Categorias
-    </h2>
+        <?php foreach ($categorias as $categoria): ?>
 
-    <div class="row mb-5">
-
-        <div class="col-md-3 mb-3">
-
-            <a href="categoria.php?categoria=acao"
-               class="btn btn-light w-100 py-3"
-               style="cursor:pointer;">
-
-                <i class="bi bi-lightning"></i>
-                Ação
-
+            <a
+                href="?pesquisa=<?php echo urlencode($pesquisa); ?>&categoria=<?php echo urlencode($categoria); ?>"
+                class="btn <?php echo $categoriaSelecionada === $categoria ? 'btn-dark' : 'btn-outline-dark'; ?>"
+            >
+                <?php echo $categoria; ?>
             </a>
 
-        </div>
-
-
-        <div class="col-md-3 mb-3">
-
-            <a href="categoria.php?categoria=esportes"
-               class="btn btn-light w-100 py-3"
-               style="cursor:pointer;">
-
-                <i class="bi bi-trophy"></i>
-                Esportes
-
-            </a>
-
-        </div>
-
-
-        <div class="col-md-3 mb-3">
-
-            <a href="categoria.php?categoria=corrida"
-               class="btn btn-light w-100 py-3"
-               style="cursor:pointer;">
-
-                <i class="bi bi-car-front"></i>
-                Corrida
-
-            </a>
-
-        </div>
-
-
-        <div class="col-md-3 mb-3">
-
-            <a href="categoria.php?categoria=rpg"
-               class="btn btn-light w-100 py-3"
-               style="cursor:pointer;">
-
-                <i class="bi bi-controller"></i>
-                RPG
-
-            </a>
-
-        </div>
+        <?php endforeach; ?>
 
     </div>
 
+    <div class="d-flex justify-content-between align-items-center mb-4">
 
-    <!-- Jogos -->
-    <h2 class="mb-4">
-        Jogos em destaque
-    </h2>
+        <div>
+
+            <h2 class="fw-bold mb-1">
+
+                <?php
+
+                if ($pesquisa !== "") {
+                    echo "Resultados da pesquisa";
+                } else {
+                    echo "Jogos em destaque";
+                }
+
+                ?>
+
+            </h2>
+
+            <p class="text-muted mb-0">
+
+                <?php echo count($jogosFiltrados); ?>
+
+                jogo(s) encontrado(s)
+
+            </p>
+
+        </div>
+
+
+        <?php if ($pesquisa !== "" || $categoriaSelecionada !== "Todas"): ?>
+
+            <a
+                href="loja.php"
+                class="btn btn-outline-dark"
+            >
+                Limpar filtros
+            </a>
+
+        <?php endif; ?>
+
+    </div>
 
     <div class="row">
 
+        <?php if (count($jogosFiltrados) > 0): ?>
 
-        <!-- GTA V -->
-        <div class="col-md-4 mb-4">
+            <?php foreach ($jogosFiltrados as $jogo): ?>
 
-            <div class="card h-100 shadow-sm">
+                <div class="col-md-6 col-lg-4 mb-4">
 
-                <img src="img/gtaV.jpeg"
-                     class="card-img-top"
-                     style="height:220px; object-fit:contain; background-color:#eee;"
-                     alt="Grand Theft Auto V">
+                    <div class="card h-100 shadow-sm border-0">
 
-                <div class="card-body d-flex flex-column">
+                        <!-- IMAGEM -->
 
-                    <h5 class="card-title">
-                        Grand Theft Auto V
-                    </h5>
+                        <img
+                            src="<?php echo $jogo["imagem"]; ?>"
+                            class="card-img-top"
+                            alt="<?php echo htmlspecialchars($jogo["nome"]); ?>"
+                            style="
+                                height: 230px;
+                                object-fit: contain;
+                                background-color: #f1f1f1;
+                            "
+                        >
+
+                        <div class="card-body d-flex flex-column">
+
+                            <span class="badge bg-dark align-self-start mb-2">
+
+                                <?php echo $jogo["categoria"]; ?>
+
+                            </span>
+
+
+                            <h5 class="card-title fw-bold">
+
+                                <?php echo $jogo["nome"]; ?>
+
+                            </h5>
+
+
+                            <p class="text-muted mb-2">
+
+                                <?php echo $jogo["genero"]; ?>
+
+                            </p>
+
+
+                            <p class="card-text">
+
+                                <?php echo $jogo["descricao"]; ?>
+
+                            </p>
+
+
+                            <div class="mt-auto">
+
+                                <!-- PREÇO -->
+
+                                <h4 class="fw-bold mb-3">
+
+                                    R$
+
+                                    <?php echo number_format(
+                                        $jogo["preco"],
+                                        2,
+                                        ",",
+                                        "."
+                                    ); ?>
+
+                                </h4>
+
+
+                                <!-- BOTÕES -->
+
+                                <a
+                                    href="<?php echo $jogo["pagina"]; ?>"
+                                    class="btn btn-outline-dark w-100 mb-2"
+                                >
+                                    Ver jogo
+                                </a>
+
+
+                                <a
+                                    href="<?php echo $jogo["pagina"]; ?>"
+                                    class="btn btn-outline-dark w-100"
+                                >
+                                    Comprar
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            <?php endforeach; ?>
+
+        <?php else: ?>
+
+            <div class="col-12">
+
+                <div class="text-center py-5">
+
+                    <i
+                        class="bi bi-controller"
+                        style="font-size: 60px;"
+                    ></i>
+
+                    <h3 class="fw-bold mt-3">
+
+                        Nenhum jogo encontrado
+
+                    </h3>
 
                     <p class="text-muted">
-                        Ação / Mundo Aberto
+
+                        Não encontramos jogos com os filtros selecionados.
+
                     </p>
 
-                    <p>
-                        Explore Los Santos em uma grande aventura
-                        de mundo aberto.
-                    </p>
-
-                    <div class="mt-auto">
-
-                        <h5 class="text-success">
-                            R$ 149,90
-                        </h5>
-
-                        <a href="gta.php"
-                           class="btn btn-dark w-100 mb-2">
-
-                            Ver jogo
-
-                        </a>
-
-                    <a href="gta.php" class="btn btn-dark w-100">
-                        Comprar
+                    <a
+                        href="loja.php"
+                        class="btn btn-dark"
+                    >
+                        Ver todos os jogos
                     </a>
 
-                    </div>
-
                 </div>
 
             </div>
 
-        </div>
-
-
-        <!-- Minecraft -->
-        <div class="col-md-4 mb-4">
-
-            <div class="card h-100 shadow-sm">
-
-                <img src="img/mine.jpg.jpeg"
-                     class="card-img-top"
-                     style="height:220px; object-fit:contain; background-color:#eee;"
-                     alt="Minecraft">
-
-                <div class="card-body d-flex flex-column">
-
-                    <h5 class="card-title">
-                        Minecraft
-                    </h5>
-
-                    <p class="text-muted">
-                        Sobrevivência / Sandbox
-                    </p>
-
-                    <p>
-                        Construa, explore e sobreviva
-                        em mundos de blocos.
-                    </p>
-
-                    <div class="mt-auto">
-
-                        <h5 class="text-success">
-                            R$ 99,90
-                        </h5>
-
-                        <a href="minecraft.php"
-                           class="btn btn-dark w-100 mb-2">
-
-                            Ver jogo
-
-                        <a href="minecraft.php" class="btn btn-dark w-100">
-                            Comprar
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Cyberpunk 2077 -->
-        <div class="col-md-4 mb-4">
-
-            <div class="card h-100 shadow-sm">
-
-                <img src="img/ciberpunk.jpeg"
-                     class="card-img-top"
-                     style="height:220px; object-fit:contain; background-color:#eee;"
-                     alt="Cyberpunk 2077">
-
-                <div class="card-body d-flex flex-column">
-
-                    <h5 class="card-title">
-                        Cyberpunk 2077
-                    </h5>
-
-                    <p class="text-muted">
-                        RPG / Ação / Mundo Aberto
-                    </p>
-
-                    <p>
-                        Explore Night City em uma
-                        aventura futurista.
-                    </p>
-
-                    <div class="mt-auto">
-
-                        <h5 class="text-success">
-                            R$ 159,90
-                        </h5>
-
-                        <a href="cyberpunk.php"
-                           class="btn btn-dark w-100 mb-2">
-
-                            Ver jogo
-
-                        </a>
-
-                       <a href="cyberpunk.php" class="btn btn-dark w-100">
-                            Comprar
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+        <?php endif; ?>
 
     </div>
 

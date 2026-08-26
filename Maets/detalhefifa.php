@@ -2,7 +2,7 @@
 
 <div class="container my-4 text-white">
     <!-- Botão de Voltar estilo Steam -->
-    <a href="index.php" class="btn btn-outline-secondary mb-3">&leftarrow; Voltar para a loja</a>
+    <a href="index.php" class="btn btn-outline-secondary mb-3">&leftarrow; Voltar para os Jogos em Destaque</a>
 
     <div class="row p-4 rounded shadow-lg" style="background-color: #0f1922; border: 1px solid #2a475e;">
         

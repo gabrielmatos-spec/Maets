@@ -18,13 +18,13 @@
 
     <div class="col-md-3 mb-4">
         <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
-            Corrida
+            RPG
         </a>
     </div>
 
     <div class="col-md-3 mb-4">
         <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
-            RPG
+            Indie
         </a>
     </div>
 

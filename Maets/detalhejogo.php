@@ -4,7 +4,7 @@
 
     <!-- Botão de Voltar -->
     <a href="index.php" class="btn btn-outline-secondary mb-3">
-        &leftarrow; Voltar para a loja
+        &leftarrow; Voltar para os Jogos em Destaque
     </a>
 
     <div class="row p-4 rounded shadow-lg"

@@ -2,9 +2,9 @@
 
 <div class="container my-5 sobre-page">
 
-    <!-- Botão voltar -->
+   <!-- Botão voltar -->
     <a href="index.php" class="btn btn-outline-secondary mb-4">
-        ← Voltar para a loja
+        ← Voltar para o início
     </a>
 
     <!-- Título -->

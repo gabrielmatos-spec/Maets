@@ -1,7 +1,33 @@
 <?php include "header.php"; ?>
 
+<style>
+
+    .btn-voltar {
+        color: #8a9aaa;
+        border: 1px solid #71808f;
+        background: transparent;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    .btn-voltar:hover {
+        color: white;
+        border-color: white;
+        background: rgba(255,255,255,0.05);
+    }
+
+</style>
+
 <div class="container py-5">
 
+    <!-- Botão voltar -->
+    <a href="index.php" class="btn-voltar mb-4 d-inline-block">
+        ← Voltar para o início
+    </a>
+
+    <!-- Título -->
     <div class="text-center mb-5">
 
         <h1 class="text-white fw-bold">
@@ -14,7 +40,8 @@
 
     </div>
 
-    <div class="row g-4">
+    <!-- Jogos -->
+     <div class="row g-4">
 
         <!-- 1 -->
         <div class="col-md-6 col-lg-3">
@@ -23,7 +50,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Grand Theft Auto V</h5>
                     <p class="card-text">Ação • Mundo Aberto</p>
-                    <a href="gta.php" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalhegta1.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>
@@ -31,11 +58,11 @@
         <!-- 2 -->
         <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow">
-                <img src="img/reddead.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
+                <img src="img/rdrcapa2.jpg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
                 <div class="card-body">
                     <h5 class="card-title">Red Dead Redemption 2</h5>
                     <p class="card-text">Ação • Aventura</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheRdr.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>
@@ -76,43 +103,7 @@
             </div>
         </div>
 
-        <!-- 6 -->
-        <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow">
-                <img src="img/residentevil4.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
-                <div class="card-body">
-                    <h5 class="card-title">Resident Evil 4</h5>
-                    <p class="card-text">Ação • Terror • Sobrevivência</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- 7 -->
-        <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow">
-                <img src="img/dmc5.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
-                <div class="card-body">
-                    <h5 class="card-title">Devil May Cry 5</h5>
-                    <p class="card-text">Ação • Hack and Slash</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- 8 -->
-        <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow">
-                <img src="img/doom.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
-                <div class="card-body">
-                    <h5 class="card-title">DOOM Eternal</h5>
-                    <p class="card-text">Ação • FPS</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- 9 -->
+          <!-- 9 -->
         <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow">
                 <img src="img/uncharted.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
@@ -124,7 +115,8 @@
             </div>
         </div>
 
-        <!-- 10 -->
+
+    <!-- 10 -->
         <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow">
                 <img src="img/assassinscreed.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
@@ -136,7 +128,7 @@
             </div>
         </div>
 
-        <!-- 11 -->
+          <!-- 11 -->
         <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow">
                 <img src="img/lastofus.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
@@ -148,19 +140,8 @@
             </div>
         </div>
 
-        <!-- 12 -->
-        <div class="col-md-6 col-lg-3">
-            <div class="card h-100 shadow">
-                <img src="img/metalgear.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
-                <div class="card-body">
-                    <h5 class="card-title">Metal Gear Solid V</h5>
-                    <p class="card-text">Ação • Furtividade • Mundo Aberto</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
+     
+    
 
 </div>
 

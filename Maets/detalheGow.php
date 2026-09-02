@@ -4,8 +4,8 @@
 
 ```
 <!-- Botão de Voltar estilo Steam -->
-<a href="index.php" class="btn btn-outline-secondary mb-3">
-    &leftarrow; Voltar para os Jogos em Destaque
+<a href="acao.php" class="btn btn-outline-secondary mb-3">
+    &leftarrow; Voltar para os Jogos de ação 
 </a>
 
 <div class="row p-4 rounded shadow-lg"
@@ -25,21 +25,21 @@
                     <img src="img/gow1.jpg"
                          class="d-block w-100"
                          style="height: 380px; object-fit: cover;"
-                         alt="God of War Screenshot 1">
+                         alt="Gow1">
                 </div>
 
                 <div class="carousel-item">
                     <img src="img/gow2.jpg"
                          class="d-block w-100"
                          style="height: 380px; object-fit: cover;"
-                         alt="God of War Screenshot 2">
+                         alt="Gow2">
                 </div>
 
                 <div class="carousel-item">
                     <img src="img/gow3.jpg"
                          class="d-block w-100"
                          style="height: 380px; object-fit: cover;"
-                         alt="God of War Screenshot 3">
+                         alt="Gow3">
                 </div>
 
             </div>
@@ -47,7 +47,7 @@
             <!-- Botão Anterior -->
             <button class="carousel-control-prev"
                     type="button"
-                    data-bs-target="#carouselGod"
+                    data-bs-target="#carouselGow"
                     data-bs-slide="prev">
 
                 <span class="carousel-control-prev-icon"
@@ -62,7 +62,7 @@
             <!-- Botão Próximo -->
             <button class="carousel-control-next"
                     type="button"
-                    data-bs-target="#carouselGod"
+                    data-bs-target="#carouselGow"
                     data-bs-slide="next">
 
                 <span class="carousel-control-next-icon"
@@ -79,26 +79,26 @@
         <!-- Miniaturas Clicáveis -->
         <div class="d-flex gap-2 justify-content-start">
 
-            <img src="img/god1.jpg"
+            <img src="img/gow1.jpg"
                  data-bs-target="#carouselGod"
                  data-bs-slide-to="0"
                  class="img-thumbnail bg-dark border-secondary active"
                  style="width: 30%; height: 75px; object-fit: cover; cursor: pointer;"
-                 alt="God of War Thumb 1">
+                 alt="Gow1">
 
-            <img src="img/god2.jpg"
+            <img src="img/gow2.jpg"
                  data-bs-target="#carouselGod"
                  data-bs-slide-to="1"
                  class="img-thumbnail bg-dark border-secondary"
                  style="width: 30%; height: 75px; object-fit: cover; cursor: pointer;"
-                 alt="God of War Thumb 2">
+                 alt="Gow2">
 
-            <img src="img/god3.jpg"
+            <img src="img/gow3.jpg"
                  data-bs-target="#carouselGod"
                  data-bs-slide-to="2"
                  class="img-thumbnail bg-dark border-secondary"
                  style="width: 30%; height: 75px; object-fit: cover; cursor: pointer;"
-                 alt="God of War Thumb 3">
+                 alt="Gow3">
 
         </div>
 

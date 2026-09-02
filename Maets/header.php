@@ -165,15 +165,41 @@
 
                         <ul class="dropdown-menu dropdown-menu-end">
 
+                           <li>
+                                <a class="dropdown-item" href="perfil.php">
+                                    <i class="bi bi-person"></i>
+                                    Meu Perfil
+                                </a>
+                            </li>
+
                             <li>
-                                <a class="dropdown-item" href="#">
-                                    Meus Jogos
+                                <a class="dropdown-item" href="biblioteca.php">
+                                    <i class="bi bi-book"></i>
+                                    Biblioteca
                                 </a>
                             </li>
 
                             <li>
                                 <a class="dropdown-item" href="#">
-                                    Minha Biblioteca
+                                    Amigos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Minhas Compras
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    favoritos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Configurações
                                 </a>
                             </li>
 

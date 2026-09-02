@@ -70,11 +70,11 @@
         <!-- 3 -->
         <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow">
-                <img src="img/godofwar.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
+                <img src="img/gowcapaa.jpg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
                 <div class="card-body">
                     <h5 class="card-title">God of War</h5>
                     <p class="card-text">Ação • Mitologia</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheGow.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>
@@ -82,11 +82,11 @@
         <!-- 4 -->
         <div class="col-md-6 col-lg-3">
             <div class="card h-100 shadow">
-                <img src="img/spiderman.jpeg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
+                <img src="img/spidercapaa.jpg" class="card-img-top" style="height:280px; object-fit:contain; background:#000;">
                 <div class="card-body">
-                    <h5 class="card-title">Marvel's Spider-Man</h5>
+                    <h5 class="card-title">Marvel's Spider-Man II</h5>
                     <p class="card-text">Ação • Aventura</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheSpider.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Ghost of Tsushima</h5>
                     <p class="card-text">Ação • Samurai • Mundo Aberto</p>
-                    <a href="#" class="btn btn-primary w-100">Ver Jogo</a>
+                    <a href="detalheGhost.php" class="btn btn-primary w-100">Ver Jogo</a>
                 </div>
             </div>
         </div>

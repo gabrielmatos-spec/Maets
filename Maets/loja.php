@@ -1,63 +1,55 @@
 <?php include "header.php"; ?>
 
-<?php
-
-$pesquisa = isset($_GET['pesquisa']) ? strtolower(trim($_GET['pesquisa'])) : "";
-
-?>
-
 <div class="container my-5">
 
-    <!-- Título da loja -->
+    <!-- Título -->
     <div class="text-center mb-5">
 
-        <h1 class="fw-bold">
-            Loja De Jogos
+        <h1 class="text-white fw-bold">
+            Explore nossa Loja
         </h1>
 
-        <p class="text-muted">
-            Encontre seus jogos favoritos
+        <p class="text-secondary">
+            Encontre jogos de diferentes categorias e descubra novas aventuras.
         </p>
 
     </div>
 
 
-    <!-- Pesquisa -->
-    <div class="row justify-content-center mb-5">
+    <!-- Barra de Pesquisa -->
+    <div class="mb-4">
 
-        <div class="col-md-8">
+        <input
+            type="text"
+            id="pesquisa"
+            class="form-control form-control-lg"
+            placeholder="🔎 Pesquisar"
+            onkeyup="pesquisarJogos()"
+            style="
+                background-color: #171a21;
+                color: white;
+                border: 1px solid #2a475e;
+            "
+        >
 
-            <form method="GET">
+    </div>
 
-                <div class="input-group">
+    <!-- Título dos Jogos -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
 
-                    <input type="text"
-                           name="pesquisa"
-                           class="form-control"
-                           placeholder="Pesquisar jogo..."
-                           value="<?php echo htmlspecialchars($pesquisa); ?>">
+        <h2 class="text-white">
+            Jogos Disponíveis
+        </h2>
 
-                    <button class="btn btn-dark" type="submit">
-                        <i class="bi bi-search"></i>
-                        Pesquisar
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
+        <span
+            id="contadorJogos"
+            class="text-secondary">
+        </span>
 
     </div>
 
 
-    <!-- Jogos -->
-    <h2 class="mb-4">
-        Jogos em destaque
-    </h2>
-
-
-    <!-- Grade dos jogos -->
+        <!-- Grade dos jogos -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
 
 
@@ -531,5 +523,117 @@ $pesquisa = isset($_GET['pesquisa']) ? strtolower(trim($_GET['pesquisa'])) : "";
     </div>
 
 </div>
+
+        <!-- Resultado vazio -->
+        <div
+            id="nenhumResultado"
+            class="text-center text-white mt-4"
+            style="display: none;"
+        >
+
+            <h4>
+                Nenhum jogo encontrado.
+            </h4>
+
+            <p class="text-secondary">
+                Tente pesquisar outro nome.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function pesquisarJogos() {
+
+        let pesquisa = document
+            .getElementById("pesquisa")
+            .value
+            .toLowerCase();
+
+        let jogos = document.querySelectorAll(".jogo");
+
+        let encontrados = 0;
+
+        jogos.forEach(function(jogo) {
+
+            let nome = jogo
+                .innerText
+                .toLowerCase();
+
+            if(nome.includes(pesquisa)) {
+
+                jogo.style.display = "block";
+                encontrados++;
+
+            } else {
+
+                jogo.style.display = "none";
+
+            }
+
+        });
+
+        verificarResultados(encontrados);
+
+    }
+
+
+    function filtrarCategoria(categoria) {
+
+        let jogos = document.querySelectorAll(".jogo");
+
+        let encontrados = 0;
+
+        jogos.forEach(function(jogo) {
+
+            let categoriaJogo =
+                jogo.getAttribute("data-categoria");
+
+            if(
+                categoria === "todos" ||
+                categoriaJogo === categoria
+            ) {
+
+                jogo.style.display = "block";
+                encontrados++;
+
+            } else {
+
+                jogo.style.display = "none";
+
+            }
+
+        });
+
+        verificarResultados(encontrados);
+
+    }
+
+
+    function verificarResultados(quantidade) {
+
+        let mensagem =
+            document.getElementById("nenhumResultado");
+
+        if(quantidade === 0) {
+
+            mensagem.style.display = "block";
+
+        } else {
+
+            mensagem.style.display = "none";
+
+        }
+
+    }
+
+</script>
+
 
 <?php include "footer.php"; ?>

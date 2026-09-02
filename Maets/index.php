@@ -5,25 +5,25 @@
 <div class="row">
 
     <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+        <a href="acao.php" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
             Ação
         </a>
     </div>
 
     <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+        <a href="esportes.php" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
             Esportes
         </a>
     </div>
 
     <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+        <a href="rpg.php" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
             RPG
         </a>
     </div>
 
     <div class="col-md-3 mb-4">
-        <a href="#" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
+        <a href="indie.php" class="btn btn-light w-100 py-4 fs-4 border categoria-btn">
             Indie
         </a>
     </div>

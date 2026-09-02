@@ -239,7 +239,7 @@
             Plataforma Digital de Compra de Jogos Digitais
         </p>
 
-        <a href="index.php" class="btn btn-primary">
+        <a href="explorar.php" class="btn btn-primary">
             Explorar Jogos
         </a>
 
